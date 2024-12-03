@@ -18,6 +18,7 @@ namespace AOC2024
             if(string.IsNullOrEmpty(input))
             {
                 Console.Error.WriteLine("Could not retrieve input text. Exiting...");
+                return;
             }
 
             Console.WriteLine($" Part 1 Result:\n {RunPart1(input)}");
