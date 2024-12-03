@@ -47,6 +47,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\01\Solution1.cs" />
+    <Compile Include="Solutions\02\Solution2.cs" />
+    <Compile Include="Solutions\03\Solution3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -54,6 +56,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Solutions\01\input.txt" />
+    <Content Include="Solutions\02\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
