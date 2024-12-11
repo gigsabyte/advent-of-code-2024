@@ -9,6 +9,9 @@ namespace AOC2024
         protected abstract int Day { get; }
         protected abstract string Name { get; }
 
+        protected abstract string Part1ExpectedResult { get; }
+        protected abstract string Part2ExpectedResult { get; }
+
         public void Run()
         {
             PrintTitle(out var footer);
@@ -20,6 +23,8 @@ namespace AOC2024
                 Console.Error.WriteLine("Could not retrieve input text. Exiting...");
                 return;
             }
+
+            TestSampleInput();
 
             Console.WriteLine($" Part 1 Result:\n {RunPart1(input)}");
             Console.WriteLine(" --------------");
@@ -78,6 +83,40 @@ namespace AOC2024
             }
 
             return input;
+        }
+
+        private void TestSampleInput()
+        {
+            var sampleInput = string.Empty;
+            var filepath = $"./Solutions/{Day.ToString("00")}/sample_input.txt";
+
+            try
+            {
+                sampleInput = File.ReadAllText(filepath);
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                Console.WriteLine($"No sample input! Skipping test...");
+                return;
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"Encountered an unknown error attempting to get input at file '{filepath}'.");
+                Console.Error.WriteLine($"Full error text:\n{e.Message}");
+            }
+
+            Console.WriteLine(" Part 1 Sample Input:");
+            Console.WriteLine($" Expected: {Part1ExpectedResult}");
+
+            var actual = RunPart1(sampleInput);
+            Console.WriteLine($" Actual:   {actual} {(Part1ExpectedResult == actual ? '\u2705' : '\u2705')}");
+            Console.WriteLine(" --------------");
+
+            Console.WriteLine(" Part 2 Sample Input:");
+            Console.WriteLine($" Expected: {Part2ExpectedResult} ");
+            actual = RunPart2(sampleInput);
+            Console.WriteLine($" Actual:   {actual} {(Part2ExpectedResult == actual ? '\u2705' : '\u274c')}");
+            Console.WriteLine(" --------------------------");
         }
 
         protected abstract string RunPart1(string input);
