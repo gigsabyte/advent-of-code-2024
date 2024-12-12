@@ -10,6 +10,10 @@ namespace AOC2024.Solutions
 
         protected override string Name => "Print Queue";
 
+        protected override string Part1ExpectedResult => "143";
+
+        protected override string Part2ExpectedResult => "123";
+
         protected override string RunPart1(string input)
         {
             ParseRulesAndUpdates(input, out var rules, out var updates);

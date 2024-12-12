@@ -11,6 +11,10 @@ namespace AOC2024.Solutions
 
         protected override string Name => "Historian Hysteria";
 
+        protected override string Part1ExpectedResult => "11";
+
+        protected override string Part2ExpectedResult => "31";
+
         protected override string RunPart1(string input)
         {
             // Parse

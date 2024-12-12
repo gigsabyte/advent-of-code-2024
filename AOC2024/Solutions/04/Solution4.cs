@@ -6,6 +6,10 @@
 
         protected override string Name => "Ceres Search";
 
+        protected override string Part1ExpectedResult => "18";
+
+        protected override string Part2ExpectedResult => "9";
+
         protected override string RunPart1(string input)
         {
             var letters = SplitLines(input);

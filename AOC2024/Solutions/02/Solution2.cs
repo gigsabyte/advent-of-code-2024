@@ -11,6 +11,10 @@ namespace AOC2024.Solutions
 
         protected override string Name => "Red-Nosed Reports";
 
+        protected override string Part1ExpectedResult => "2";
+
+        protected override string Part2ExpectedResult => "4";
+
         protected override string RunPart1(string input)
         {
             var reports = ParseReports(input);

@@ -12,6 +12,10 @@ namespace AOC2024.Solutions
 
         protected override string Name => "Mull It Over";
 
+        protected override string Part1ExpectedResult => "161";
+
+        protected override string Part2ExpectedResult => "48";
+
         protected override string RunPart1(string input)
         {
             return ParseOperations(input).ToString();
