@@ -109,13 +109,13 @@ namespace AOC2024
             Console.WriteLine($" Expected: {Part1ExpectedResult}");
 
             var actual = RunPart1(sampleInput);
-            Console.WriteLine($" Actual:   {actual} {(Part1ExpectedResult == actual ? '\u2705' : '\u2705')}");
+            Console.WriteLine($" Actual:   {actual} {(Part1ExpectedResult.Equals(actual) ? '\u2705' : '\u274c')}");
             Console.WriteLine(" --------------");
 
             Console.WriteLine(" Part 2 Sample Input:");
             Console.WriteLine($" Expected: {Part2ExpectedResult} ");
             actual = RunPart2(sampleInput);
-            Console.WriteLine($" Actual:   {actual} {(Part2ExpectedResult == actual ? '\u2705' : '\u274c')}");
+            Console.WriteLine($" Actual:   {actual} {(Part2ExpectedResult.Equals(actual) ? '\u2705' : '\u274c')}");
             Console.WriteLine(" --------------------------");
         }
 
