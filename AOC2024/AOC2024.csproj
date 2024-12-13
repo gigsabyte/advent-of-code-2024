@@ -48,6 +48,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\01\Solution1.cs" />
     <Compile Include="Solutions\02\Solution2.cs" />
+    <Compile Include="Solutions\12\Solution12.cs" />
+    <Compile Include="Solutions\11\Solution11.cs" />
+    <Compile Include="Solutions\10\Solution10.cs" />
+    <Compile Include="Solutions\09\Solution9.cs" />
+    <Compile Include="Solutions\08\Solution8.cs" />
+    <Compile Include="Solutions\07\Solution7.cs" />
+    <Compile Include="Solutions\06\Solution6.cs" />
     <Compile Include="Solutions\05\Solution5.cs" />
     <Compile Include="Solutions\04\Solution4.cs" />
     <Compile Include="Solutions\03\Solution3.cs" />
